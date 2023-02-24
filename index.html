@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh_Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Profile Cards</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="card">
+    <div class="user">
+      <div class="imgBx">
+        <img src="./images/user.jpg" alt="user">
+      </div>
+      <div class="content">
+        <h2>Catch the Kitten<br><span>Small Game</span></h2>
+      </div>
+      <span class="toggle"></span>
+    </div>
+    <ul class="contact">
+      <li style="--clr:#FBD2DE; --i:0;">
+        <a href="./1515">
+          <div class="iconBx"><h2>1</h2></div>
+          <p>15格 × 15格&nbsp;&nbsp;简单&nbsp;（或许是的）</p>
+        </a>
+      </li>
+      <li style="--clr:#FBB7CA; --i:1;">
+        <a href="./1510">
+          <div class="iconBx"><h2>2</h2></div>
+          <p>15格 × 10格&nbsp;&nbsp;普通&nbsp;（一点进阶）</p>
+        </a>
+      </li>
+      <li style="--clr:#FB9BB6; --i:2;">
+        <a href="./1015">
+          <div class="iconBx"><h2>3</h2></div>
+          <p>10格 × 15格&nbsp;&nbsp;普通&nbsp;（没啥区别）</p>
+        </a>
+      </li>
+      <li style="--clr:#FB80A3; --i:2;">
+        <a href="./1010">
+          <div class="iconBx"><h2>4</h2></div>
+          <p>10格 × 10格&nbsp;&nbsp;困难&nbsp;（可能简单）</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <script>
+    const toggle = document.querySelector('.toggle'),
+      card = document.querySelector('.card')
+      toggle.onclick = () => {
+      card.classList.toggle('active')
+    }
+  </script>
+</body>
+</html>
