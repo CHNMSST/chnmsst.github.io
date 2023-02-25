@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>Catch the Kitten</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0
+        }
+
+        body {
+            background-color: #eeeeee;
+        }
+
+        #catch-the-cat {
+            width: 100%;
+            margin-top: 32px;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+        }
+
+        a:link {
+	        color: #fb7299;
+	        text-decoration: none;
+        }
+
+        a:visited {
+	        text-decoration: none;
+	        color: #00a1d6;
+        }
+        
+        a:hover {
+	        text-decoration: underline;
+        }
+       
+        a:active {
+	        text-decoration: none;
+        }
+    </style>
+        <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?9ff4b0f37c3bd60bb78a3efc414af7f7";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+</head>
+
+<body>
+    <script src="https://spiraltower.gitee.io/404/phaser.min.js"></script>
+    <script src="https://spiraltower.gitee.io/404/catch-the-cat.js"></script>
+	<style>
+		p{
+			font-size: 90px;
+			text-align: center;
+		}
+		div{
+			text-align: center
+		}
+	</style>
+    <div id="catch-the-cat"></div>
+    <script>
+        window.game = new CatchTheCatGame({
+            w: 11,
+            h: 15,
+            r: 25,
+            backgroundColor: 0xffffff,
+            parent: 'catch-the-cat',
+            statusBarAlign: 'center',
+            credit: ''
+        });
+    </script>
+</body>
+</html>
